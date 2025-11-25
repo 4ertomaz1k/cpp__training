@@ -20,7 +20,7 @@ public:
 
     void displayInfo()
     {
-        cout << "Book name: " << title_ <<  endl;
+        cout << "Book name: " << title_ <<  endl; //title_  , not title, because title is local and cant be read her
         cout << "Author: " << author_ << endl;
     }
     
