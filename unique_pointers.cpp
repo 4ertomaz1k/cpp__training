@@ -20,7 +20,7 @@ public:
 void create_animals()
 {
   std::unique_ptr<Animals> hodgehog = std::make_unique<Animals>(" hodgehog");// create ptr for Animals type and named his - hodgehod.  malloc for Animals type and give "hodgehog" for constuctor
-  std::unique_ptr<Animals> dog = std::make_unique<Animals>(" dog"); //the same as in the 21 line
+  std::unique_ptr<Animals> dog = std::make_unique<Animals>(" dog"); //the same as in the 21 line.
 }
 
 
