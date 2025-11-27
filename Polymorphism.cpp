@@ -22,7 +22,7 @@ public:
         color_ = color;
     }
 
-    std::string getColor() const// const for security guaranteee
+    std::string getColor() const// const for security guarantee
     {
         return color_;
     }
