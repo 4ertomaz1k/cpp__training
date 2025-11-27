@@ -15,7 +15,7 @@ private:
 public:
     Shape(const std::string& color): color_(color) {};
     //virtual need for redefinitions
-    virtual ~Shape() {};// destructor need to be virtual, because it based rool for any base class, which will be used by polymorphism
+    virtual ~Shape() {};// destructor need to be virtual, because it based rool for any parent class, which will be used by polymorphism
 
     void setColor(std::string color)
     {
@@ -53,12 +53,12 @@ public:
         return width_ * height_;
     }
 
-    void displayDimension() const override
+    void displayDimension() const override//redefinitions
         {
             cout << "this is " << getColor() << " rectangle with W:" << width_ << " H:" << height_ << endl;
         }
 
-    void displayShapeInfo() const override
+    void displayShapeInfo() const override//redefinitions but not used in main
     {
         cout << "its " << getColor() << " rectangle which square is " << calculateArea() << endl;
     }
@@ -75,7 +75,7 @@ private:
 public:
     Circle(int radius, const std::string& color): Shape(color), radius_(radius) {};
 
-    void displayDimension() const override
+    void displayDimension() const override//redefinitions
     {
         cout << "this is " << getColor() << " circle, which radius is " << radius_<< endl;
     }
