@@ -14,5 +14,9 @@
         "**/*.o": true,
         "**/bin": true,
         "**/debug": true
+    },
+    "git.ignoreLimitWarning": true,
+    "files.associations": {
+        "memory": "cpp"
     }
 }

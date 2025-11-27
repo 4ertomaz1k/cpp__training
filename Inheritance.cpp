@@ -36,7 +36,7 @@ class Rectangle: public Shape // public - inheritor's methods avaliable for all(
     double width_;            // private - inheritor's methods avaliable only for parent class
     double height_;                             
                             
-public:
+public://firstly need to pass the parents class
     Rectangle(double width, double height, const std::string& color) :Shape(color), width_(width), height_(height) {};
 
     double calculateArea() const
